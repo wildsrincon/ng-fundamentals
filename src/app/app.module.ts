@@ -1,5 +1,5 @@
-import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
+import { BrowserModule } from '@angular/platform-browser';
 import { RouterModule } from '@angular/router';
 
 
@@ -16,6 +16,7 @@ import { appRoutes } from './routes';
 import { Error404Component } from './error/404.component';
 import { EventRouteActivator } from './events/event-route-activator.service';
 import { EventListResolver } from './events/shared/event-list-resolver.service';
+import { AuthService } from './user/auth.service';
 
 @NgModule({
   declarations: [
@@ -36,6 +37,7 @@ import { EventListResolver } from './events/shared/event-list-resolver.service';
     ToastrService,
     EventRouteActivator,
     EventListResolver,
+    AuthService,
     {
       provide: 'canDeactivateCreateEvent',
       useValue: checkDirtyState

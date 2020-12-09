@@ -16,6 +16,10 @@ button {
   color: #555;
 }
 
+button#submit {
+  margin-right: 10px;
+}
+
 [hidden] {
   display: none !important;
 }
