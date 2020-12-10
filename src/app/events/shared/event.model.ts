@@ -21,5 +21,5 @@ export interface SessionI {
   duration: number;
   level: string;
   abstract: string;
-  voters: any;
+  voters: string[];
 }
